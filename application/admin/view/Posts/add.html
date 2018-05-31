@@ -1,0 +1,127 @@
+{extend name="base" /}
+{block name="title"}<title>添加文章</title>{/block}
+{block name="jsone"}
+  <!-- Ueditor配置文件 -->
+  <script type="text/javascript" src="/static/ueditor/ueditor.config.js"></script>
+  <!-- 编辑器源码文件 -->
+  <script type="text/javascript" src="/static/ueditor/ueditor.all.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/static/ueditor/lang/zh-cn/zh-cn.js"></script>
+{/block}
+
+{block name="css"}
+  <link rel="stylesheet" type="text/css" href="/static/webuploader/webuploader.css">
+{/block}
+
+{block name="pageheader"}
+  <section class="content-header">
+      <h1>
+        文章管理
+        <small>添加文章</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>文章管理</a></li>
+        <li class="active">添加文章</li>
+      </ol>
+    </section>
+{/block}
+{block name="content"}
+  <form action="/admin/Pages/add" method="post" enctype="multipart/form-data">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <div class="form-group">
+          <label for="title">文章标题</label>
+          <input type="text" class="form-control" name="title" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="subtitle">小标题</label>
+          <input type="text" class="form-control" name="subtitle" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="keyword">关键字</label>
+          <input type="text" class="form-control" name="keyword" placeholder="关键字间用逗号,分隔">
+        </div>
+        <div class="form-group">
+          <label for="description">描述</label>
+          <input type="text" class="form-control" name="description" placeholder="">
+        </div>
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        <div class="form-group">
+          <label>缩略图</label>
+          
+          <div id="uploader-demo">
+            <!--用来存放item-->
+              <div id="fileList" class="uploader-list">
+              </div>
+            <div id="filePicker">选择图片</div>
+           </div>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 加载编辑器的容器 -->
+    <script id="container" name="content" type="text/plain">
+        这里写你的初始化内容
+    </script>
+    
+    <div class="col-xs-12 text-right" style="margin: 2em 2em 0 0;">
+      <button type="submit" class="btn btn-success">发布</button>
+    </div>
+  </form>
+
+
+ {/block}
+
+{block name="jstwo"}
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
+
+    <script type="text/javascript" src="/static/webuploader/webuploader.js"></script>    <!-- 引用插件js -->
+    <script type="text/javascript">
+         var $list=$("#fileList");   //这几个初始化全局的百度文档上没说明，好蛋疼
+         var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+         var thumbnailHeight = 100;  
+         var uploader = WebUploader.create({
+          // 选完文件后，是否自动上传。
+         auto: true,
+          // swf文件路径
+         swf: 'uploader.swf', //加载swf文件，路径一定要对
+          // 文件接收服务端。
+          server: 'p',
+          // 选择文件的按钮。可选。
+          // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+          pick: '#filePicker',
+          // 只允许选择图片文件。
+          accept: {
+              title: 'Images',
+              extensions: 'gif,jpg,jpeg,bmp,png',
+              mimeTypes: 'image/'
+          }
+      });
+    //上传完成事件监听
+      uploader.on( 'fileQueued', function(file) {
+          var $li = $(
+                  '<div id="' + file.id + '" class="file-item thumbnail">' +
+                      '<img>' +
+                      '<div class="info">' + file.name + '</div>' +
+                  '</div>'
+                  ),
+              $img = $li.find('img');
+          // $list为容器jQuery实例
+                 $list.append( $li );
+          // 创建缩略图
+          // 如果为非图片文件，可以不用调用此方法。
+          // thumbnailWidth x thumbnailHeight 为 100 x 100
+          uploader.makeThumb( file, function( error, src ) {
+              if ( error ) {
+                  $img.replaceWith('<span>不能预览</span>');
+                  return;
+              }
+              $img.attr( 'src', src );
+          }, thumbnailWidth, thumbnailHeight );
+      });
+    </script>
+
+{/block}

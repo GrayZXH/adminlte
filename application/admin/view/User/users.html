@@ -1,0 +1,97 @@
+{extend name="base" /}
+{block name="title"}<title>客户列表</title>{/block}
+{block name="pageheader"}
+	<section class="content-header">
+      <h1>
+        客户管理
+        <small>客户列表</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 客户管理</a></li>
+        <li class="active">客户列表</li>
+      </ol>
+    </section>
+{/block}
+{block name="content"}
+<div style="background-color: #fff">
+  <div class="row">
+    <div class="col-xs-12">
+      
+    </div>
+    <div class="col-xs-12">
+      <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">所有用户</h3>
+          <div class="box-tools">
+            <div class="input-group input-group-sm" style="width: 150px;">
+              <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+              <div class="input-group-btn">
+                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-responsive no-padding">
+          <table class="table table-hover">
+            <tbody><tr>
+              <th>ID</th>
+              <th>昵称</th>
+              <th>邮箱</th>
+              <th>手机</th>
+              <th>角色</th>
+              <th>创建时间</th>
+              <th>状态</th>
+              <th>操作</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>admin</td>
+              <td>rayzxh@163.com</td>
+              <td>13800138000</td>
+              <td>超级管理员</td>
+              <td>2018年5月31日18:03:35</td>
+              <td>使用中</td>
+              <td>
+                <div class="btn-group  btn-group-xs" role="group">
+                  <button type="button" class="btn btn-success">删除</button>
+                </div>
+              </td>
+            </tr>
+            
+          </tbody></table>
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {/block}
+
