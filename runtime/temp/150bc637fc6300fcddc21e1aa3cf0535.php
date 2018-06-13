@@ -1,3 +1,4 @@
+<?php /*a:2:{s:53:"E:\www\adminlte\application\admin\view\posts\add.html";i:1528870155;s:48:"E:\www\adminlte\application\admin\view\base.html";i:1528600291;}*/ ?>
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -7,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-  {block name="title"}<title>网站标题</title>{/block}
+  <title>添加文章</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
@@ -22,8 +23,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
   <link rel="stylesheet" type="text/css"  href="/static/admin/dist/css/skins/skin-red.min.css " />
-  {block name="jsone"}{/block}
-  {block name="css"}{/block}
+  
+  <!-- Ueditor配置文件 -->
+  <script type="text/javascript" src="/static/ueditor/ueditor.config.js"></script>
+  <!-- 编辑器源码文件 -->
+  <script type="text/javascript" src="/static/ueditor/ueditor.all.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/static/ueditor/lang/zh-cn/zh-cn.js"></script>
+<!-- 导入uploadify -->
+  <script src="/static/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="/static/uploadify/uploadify.css">
+
+  
+
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +55,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="{:url('admin/Index/index')}" class="logo">
+    <a href="<?php echo url('admin/Index/index'); ?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>UIN</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -242,10 +254,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Sidebar Menu</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="{:url('admin/Index/index')}"><i class="fa fa-dashboard"></i> <span>控制台</span></a></li>
+        <li class="active"><a href="<?php echo url('admin/Index/index'); ?>"><i class="fa fa-dashboard"></i> <span>控制台</span></a></li>
         <li><a href="#"><i class="fa fa-server"></i> <span>站点管理</span></a></li>
         <li><a href="#"><i class="fa fa-home"></i> <span>首页管理</span></a></li>
-        <li><a href="{:url('admin/User/users')}"><i class="fa fa-user-circle-o"></i> <span>用户管理</span></a></li>
+        <li><a href="<?php echo url('admin/User/users'); ?>"><i class="fa fa-user-circle-o"></i> <span>用户管理</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-file-word-o"></i> <span>文章管理</span>
             <span class="pull-right-container">
@@ -253,8 +265,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{:url('admin/Posts/add')}">添加文章</a></li>
-            <li><a href="{:url('admin/Posts/posts')}">文章列表</a></li>
+            <li><a href="<?php echo url('admin/Posts/add'); ?>">添加文章</a></li>
+            <li><a href="<?php echo url('admin/Posts/posts'); ?>">文章列表</a></li>
             <li><a href="#">草稿箱</a></li>
             <li><a href="#">回收站</a></li>
           </ul>
@@ -266,8 +278,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{:url('admin/Pages/add')}">添加页面</a></li>
-            <li><a href="{:url('admin/Pages/pages')}">页面列表</a></li>
+            <li><a href="<?php echo url('admin/Pages/add'); ?>">添加页面</a></li>
+            <li><a href="<?php echo url('admin/Pages/pages'); ?>">页面列表</a></li>
             <li><a href="#">草稿箱</a></li>
             <li><a href="#">回收站</a></li>
           </ul>
@@ -303,18 +315,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    {block name="pageheader"} 
-    <section class="content-header">
+    
+  <section class="content-header">
       <h1>
-        Page Header
-        <small>Optional description</small>
+        页面管理
+        <small>添加文章</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>页面管理</a></li>
+        <li class="active">添加文章</li>
       </ol>
     </section>
-    {/block}
+
 
     <!-- Main content -->
     <section class="content container-fluid">
@@ -322,7 +334,97 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
-      {block name="content"} <p>content</p> {/block}
+      
+    <div>
+      <section class="content">
+      <div class="row">
+        
+        <!-- left column -->
+        <div class="col-md-6">
+          <!-- general form elements disabled -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">基本信息/BASIC INFORMATION</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>标题/TITLE</label>
+                  <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+                <div class="form-group">
+                  <label>关键字/KEYWORDS</label>
+                  <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+                <div class="form-group">
+                  <label>描述/DESCRIPTION</label>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">缩略图</label>
+                  <input type="file" id="exampleInputFile" accept="image/*">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+              </form>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!--/.col (left) -->
+        <!-- right column -->
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">基本信息/BASIC INFORMATION</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body">
+                <div class="form-group">
+                  <label>分类/CATALOGUE</label>
+                  <select class="form-control">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>状态/STATUS</label>
+                  <select class="form-control">
+                    <option>立即发布</option>
+                    <option>存为草稿</option>
+                  </select>
+                </div>
+              </div>
+              <!-- /.box-body -->
+            </form>
+          </div>
+          <!-- /.box -->
+
+        </div>
+        <!--/.col (right) -->
+      </div>
+      <!-- /.row -->
+    </section>
+    </div>
+    
+    <!-- 加载编辑器的容器 -->
+    <script id="container" name="content" type="text/plain">
+        这里写你的初始化内容
+    </script>
+    
+    <div class="col-xs-12 text-right" style="margin: 2em 2em 0 0;">
+      <button type="submit" class="btn btn-success">发布</button>
+    </div>
+
+ 
 
     </section>
     <!-- /.content -->
@@ -424,7 +526,43 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="/static/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/static/admin/dist/js/adminlte.min.js"></script>
-{block name="jstwo"}{/block}
+
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
+    <script type="text/javascript">
+
+      $(function() {
+        $('#file_upload').uploadify({
+            'swf'      : '/static/uploadify/uploadify.swf',
+            'uploader' : '',
+            'buttonText': '上传图片',
+            'fileTypeDesc': 'Image Files',
+            'fileObjName' : 'file',
+            //允许上传的文件后缀
+            'fileTypeExts': '*.gif; *.jpg; *.png',
+            'onUploadSuccess' : function(file,data,response) {
+                // response true ,false
+                if(response) {
+                    var obj = JSON.parse(data); //由JSON字符串转换为JSON对象
+
+                    /*console.log(data);*/
+                    $('#' + file.id).find('.data').html(' 上传完毕');
+
+                    $("#upload_org_code_img").attr("src",obj.data);
+                    $("#file_upload_image").attr('value',obj.data);
+                    $("#upload_org_code_img").show();
+                }else{
+                    alert('上传失败');
+                }
+            },
+        });
+      });
+    </script>
+
+
+
 
 
 

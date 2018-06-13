@@ -1,0 +1,433 @@
+---------------------------------------------------------------
+[ 2018-06-10T11:10:36+08:00 ] 127.0.0.1 GET /
+[ info ] idatamind.com/ [运行时间：0.258705s][吞吐率：3.87req/s] [内存消耗：1,082.10kb] [文件加载：51]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:10:42+08:00 ] 127.0.0.1 GET /admin/index
+[ info ] idatamind.com/admin/index [运行时间：0.073435s][吞吐率：13.62req/s] [内存消耗：1,311.79kb] [文件加载：57]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:11:33+08:00 ] 127.0.0.1 GET /admin/index
+[ info ] idatamind.com/admin/index [运行时间：0.025220s][吞吐率：39.65req/s] [内存消耗：1,312.15kb] [文件加载：57]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:11:35+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] idatamind.com/admin/index/index.html [运行时间：0.020524s][吞吐率：48.72req/s] [内存消耗：1,161.91kb] [文件加载：55]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:11:49+08:00 ] 127.0.0.1 GET /admin/user/users.html
+[ info ] idatamind.com/admin/user/users.html [运行时间：0.023998s][吞吐率：41.67req/s] [内存消耗：1,318.25kb] [文件加载：57]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\user\users.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:07+08:00 ] 127.0.0.1 GET /admin/user/users.html
+[ info ] idatamind.com/admin/user/users.html [运行时间：0.023755s][吞吐率：42.10req/s] [内存消耗：1,161.99kb] [文件加载：55]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/user/users.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\user\users.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:13+08:00 ] 127.0.0.1 GET /admin/posts/add.html
+[ info ] idatamind.com/admin/posts/add.html [运行时间：0.024918s][吞吐率：40.13req/s] [内存消耗：1,328.02kb] [文件加载：57]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/user/users.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\posts\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:17+08:00 ] 127.0.0.1 POST /admin/posts/p
+[ info ] idatamind.com/admin/posts/p [运行时间：0.017645s][吞吐率：56.67req/s] [内存消耗：1,094.79kb] [文件加载：52]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/posts/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHyqtt6gMhHe8gXkG',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'origin' => 'http://idatamind.com',
+  'content-length' => '430303',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'WU_FILE_0',
+  'name' => 'Scan.jpg',
+  'type' => 'image/jpeg',
+  'lastModifiedDate' => 'Tue May 15 2018 17:12:58 GMT+0800 (中国标准时间)',
+  'size' => '429569',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:29+08:00 ] 127.0.0.1 GET /admin/posts/add.html
+[ info ] idatamind.com/admin/posts/add.html [运行时间：0.020385s][吞吐率：49.06req/s] [内存消耗：1,162.78kb] [文件加载：55]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/user/users.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\posts\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:43+08:00 ] 127.0.0.1 POST /admin/posts/p
+[ info ] idatamind.com/admin/posts/p [运行时间：0.017862s][吞吐率：55.98req/s] [内存消耗：1,094.79kb] [文件加载：52]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/posts/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryCmldd11HTonZY0BV',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'origin' => 'http://idatamind.com',
+  'content-length' => '430303',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'WU_FILE_1',
+  'name' => 'Scan.jpg',
+  'type' => 'image/jpeg',
+  'lastModifiedDate' => 'Tue May 15 2018 17:12:58 GMT+0800 (中国标准时间)',
+  'size' => '429569',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:48+08:00 ] 127.0.0.1 POST /admin/posts/p
+[ info ] idatamind.com/admin/posts/p [运行时间：0.019956s][吞吐率：50.11req/s] [内存消耗：1,094.79kb] [文件加载：52]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/posts/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryB0yfgJcKD5H8zOo5',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'origin' => 'http://idatamind.com',
+  'content-length' => '155483',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'WU_FILE_2',
+  'name' => '1200.jpg',
+  'type' => 'image/jpeg',
+  'lastModifiedDate' => 'Sat Jun 09 2018 19:32:56 GMT+0800 (中国标准时间)',
+  'size' => '154749',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:49+08:00 ] 127.0.0.1 POST /admin/posts/p
+[ info ] idatamind.com/admin/posts/p [运行时间：0.018248s][吞吐率：54.80req/s] [内存消耗：1,094.79kb] [文件加载：52]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/posts/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarypNkTcXLJPVRjYBdJ',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'origin' => 'http://idatamind.com',
+  'content-length' => '343998',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'WU_FILE_3',
+  'name' => '61832.jpg',
+  'type' => 'image/jpeg',
+  'lastModifiedDate' => 'Sat Jun 09 2018 19:40:28 GMT+0800 (中国标准时间)',
+  'size' => '343262',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:49+08:00 ] 127.0.0.1 POST /admin/posts/p
+[ info ] idatamind.com/admin/posts/p [运行时间：0.019048s][吞吐率：52.50req/s] [内存消耗：1,094.81kb] [文件加载：52]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/posts/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarybnf5NwC8n2EpYR9v',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'origin' => 'http://idatamind.com',
+  'content-length' => '120958',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'WU_FILE_4',
+  'name' => '手机版.jpg',
+  'type' => 'image/jpeg',
+  'lastModifiedDate' => 'Sat Jun 09 2018 19:42:19 GMT+0800 (中国标准时间)',
+  'size' => '120214',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:49+08:00 ] 127.0.0.1 POST /admin/posts/p
+[ info ] idatamind.com/admin/posts/p [运行时间：0.017295s][吞吐率：57.82req/s] [内存消耗：1,094.79kb] [文件加载：52]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/posts/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryuP0vB5bPSjqluqqq',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'origin' => 'http://idatamind.com',
+  'content-length' => '154743',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'WU_FILE_6',
+  'name' => '头图.jpg',
+  'type' => 'image/jpeg',
+  'lastModifiedDate' => 'Sat Jun 09 2018 19:34:23 GMT+0800 (中国标准时间)',
+  'size' => '154005',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:50+08:00 ] 127.0.0.1 POST /admin/posts/p
+[ info ] idatamind.com/admin/posts/p [运行时间：0.036549s][吞吐率：27.36req/s] [内存消耗：1,094.77kb] [文件加载：52]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/posts/add.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryhYHoYAcrIHDcl94A',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'origin' => 'http://idatamind.com',
+  'content-length' => '99950',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'WU_FILE_5',
+  'name' => '手机头图.jpg',
+  'type' => 'image/jpeg',
+  'lastModifiedDate' => 'Sat Jun 09 2018 19:35:15 GMT+0800 (中国标准时间)',
+  'size' => '99201',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:21:53+08:00 ] 127.0.0.1 GET /admin/posts/add.html
+[ info ] idatamind.com/admin/posts/add.html [运行时间：0.022477s][吞吐率：44.49req/s] [内存消耗：1,162.95kb] [文件加载：55]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/user/users.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\posts\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T11:23:32+08:00 ] 127.0.0.1 GET /admin/posts/add.html
+[ info ] idatamind.com/admin/posts/add.html [运行时间：0.025517s][吞吐率：39.19req/s] [内存消耗：1,328.34kb] [文件加载：57]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/user/users.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\posts\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T15:46:19+08:00 ] 127.0.0.1 GET /admin/posts/add.html
+[ info ] idatamind.com/admin/posts/add.html [运行时间：0.023961s][吞吐率：41.73req/s] [内存消耗：1,162.93kb] [文件加载：55]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://idatamind.com/admin/user/users.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\posts\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-10T15:46:26+08:00 ] 127.0.0.1 GET /admin/index/index
+[ info ] idatamind.com/admin/index/index [运行时间：0.021476s][吞吐率：46.56req/s] [内存消耗：1,161.52kb] [文件加载：55]
+[ info ] [ LANG ] E:\www\adminlte\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36 OPR/53.0.2907.68',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'idatamind.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\www\adminlte\application\admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

@@ -9,7 +9,7 @@
 {/block}
 
 {block name="css"}
-  <link rel="stylesheet" type="text/css" href="/static/webuploader/webuploader.css">
+
 {/block}
 
 {block name="pageheader"}
@@ -19,46 +19,92 @@
         <small>添加文章</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>文章管理</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>页面管理</a></li>
         <li class="active">添加文章</li>
       </ol>
     </section>
 {/block}
 {block name="content"}
-  <form action="/admin/Pages/add" method="post" enctype="multipart/form-data">
-    <div class="row">
-      <div class="col-sm-6 col-xs-12">
-        <div class="form-group">
-          <label for="title">文章标题</label>
-          <input type="text" class="form-control" name="title" placeholder="">
+    <div>
+      <section class="content">
+      <div class="row">
+        
+        <!-- left column -->
+        <div class="col-md-6">
+          <!-- general form elements disabled -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">基本信息/BASIC INFORMATION</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form">
+                <!-- text input -->
+                <div class="form-group">
+                  <label>标题/TITLE</label>
+                  <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+                <div class="form-group">
+                  <label>关键字/KEYWORDS</label>
+                  <input type="text" class="form-control" placeholder="Enter ...">
+                </div>
+                <div class="form-group">
+                  <label>描述/DESCRIPTION</label>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">缩略图</label>
+                  <input type="file" id="exampleInputFile" accept="image/*">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+              </form>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
         </div>
-        <div class="form-group">
-          <label for="subtitle">小标题</label>
-          <input type="text" class="form-control" name="subtitle" placeholder="">
-        </div>
-        <div class="form-group">
-          <label for="keyword">关键字</label>
-          <input type="text" class="form-control" name="keyword" placeholder="关键字间用逗号,分隔">
-        </div>
-        <div class="form-group">
-          <label for="description">描述</label>
-          <input type="text" class="form-control" name="description" placeholder="">
-        </div>
-      </div>
-      <div class="col-sm-6 col-xs-12">
-        <div class="form-group">
-          <label>缩略图</label>
-          
-          <div id="uploader-demo">
-            <!--用来存放item-->
-              <div id="fileList" class="uploader-list">
+        <!--/.col (left) -->
+        <!-- right column -->
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-danger">
+            <div class="box-header with-border">
+              <h3 class="box-title">基本信息/BASIC INFORMATION</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body">
+                <div class="form-group">
+                  <label>分类/CATALOGUE</label>
+                  <select class="form-control">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>状态/STATUS</label>
+                  <select class="form-control">
+                    <option>立即发布</option>
+                    <option>存为草稿</option>
+                  </select>
+                </div>
               </div>
-            <div id="filePicker">选择图片</div>
-           </div>
-          <p class="help-block">Example block-level help text here.</p>
+              <!-- /.box-body -->
+            </form>
+          </div>
+          <!-- /.box -->
+
         </div>
+        <!--/.col (right) -->
       </div>
+      <!-- /.row -->
+    </section>
     </div>
+    
     <!-- 加载编辑器的容器 -->
     <script id="container" name="content" type="text/plain">
         这里写你的初始化内容
@@ -67,8 +113,6 @@
     <div class="col-xs-12 text-right" style="margin: 2em 2em 0 0;">
       <button type="submit" class="btn btn-success">发布</button>
     </div>
-  </form>
-
 
  {/block}
 
@@ -77,51 +121,35 @@
     <script type="text/javascript">
         var ue = UE.getEditor('container');
     </script>
-
-    <script type="text/javascript" src="/static/webuploader/webuploader.js"></script>    <!-- 引用插件js -->
     <script type="text/javascript">
-         var $list=$("#fileList");   //这几个初始化全局的百度文档上没说明，好蛋疼
-         var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
-         var thumbnailHeight = 100;  
-         var uploader = WebUploader.create({
-          // 选完文件后，是否自动上传。
-         auto: true,
-          // swf文件路径
-         swf: 'uploader.swf', //加载swf文件，路径一定要对
-          // 文件接收服务端。
-          server: 'p',
-          // 选择文件的按钮。可选。
-          // 内部根据当前运行是创建，可能是input元素，也可能是flash.
-          pick: '#filePicker',
-          // 只允许选择图片文件。
-          accept: {
-              title: 'Images',
-              extensions: 'gif,jpg,jpeg,bmp,png',
-              mimeTypes: 'image/'
-          }
-      });
-    //上传完成事件监听
-      uploader.on( 'fileQueued', function(file) {
-          var $li = $(
-                  '<div id="' + file.id + '" class="file-item thumbnail">' +
-                      '<img>' +
-                      '<div class="info">' + file.name + '</div>' +
-                  '</div>'
-                  ),
-              $img = $li.find('img');
-          // $list为容器jQuery实例
-                 $list.append( $li );
-          // 创建缩略图
-          // 如果为非图片文件，可以不用调用此方法。
-          // thumbnailWidth x thumbnailHeight 为 100 x 100
-          uploader.makeThumb( file, function( error, src ) {
-              if ( error ) {
-                  $img.replaceWith('<span>不能预览</span>');
-                  return;
-              }
-              $img.attr( 'src', src );
-          }, thumbnailWidth, thumbnailHeight );
+
+      $(function() {
+        $('#file_upload').uploadify({
+            'swf'      : '/static/uploadify/uploadify.swf',
+            'uploader' : '',
+            'buttonText': '上传图片',
+            'fileTypeDesc': 'Image Files',
+            'fileObjName' : 'file',
+            //允许上传的文件后缀
+            'fileTypeExts': '*.gif; *.jpg; *.png',
+            'onUploadSuccess' : function(file,data,response) {
+                // response true ,false
+                if(response) {
+                    var obj = JSON.parse(data); //由JSON字符串转换为JSON对象
+
+                    /*console.log(data);*/
+                    $('#' + file.id).find('.data').html(' 上传完毕');
+
+                    $("#upload_org_code_img").attr("src",obj.data);
+                    $("#file_upload_image").attr('value',obj.data);
+                    $("#upload_org_code_img").show();
+                }else{
+                    alert('上传失败');
+                }
+            },
+        });
       });
     </script>
+
 
 {/block}
