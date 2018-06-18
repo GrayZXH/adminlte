@@ -1,4 +1,4 @@
-<?php /*a:2:{s:55:"E:\www\adminlte\application\admin\view\index\index.html";i:1524903194;s:48:"E:\www\adminlte\application\admin\view\base.html";i:1528600291;}*/ ?>
+<?php /*a:2:{s:55:"E:\www\adminlte\application\admin\view\index\index.html";i:1524903194;s:48:"E:\www\adminlte\application\admin\view\base.html";i:1528962527;}*/ ?>
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -256,8 +256,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <ul class="treeview-menu">
             <li><a href="<?php echo url('admin/Posts/add'); ?>">添加文章</a></li>
             <li><a href="<?php echo url('admin/Posts/posts'); ?>">文章列表</a></li>
-            <li><a href="#">草稿箱</a></li>
-            <li><a href="#">回收站</a></li>
+            <li><a href="<?php echo url('admin/Posts/draft'); ?>">草稿箱</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -269,8 +268,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <ul class="treeview-menu">
             <li><a href="<?php echo url('admin/Pages/add'); ?>">添加页面</a></li>
             <li><a href="<?php echo url('admin/Pages/pages'); ?>">页面列表</a></li>
-            <li><a href="#">草稿箱</a></li>
-            <li><a href="#">回收站</a></li>
+            <li><a href="<?php echo url('admin/Pages/draft'); ?>">草稿箱</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -290,9 +288,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">报名列表</a></li>
-            <li><a href="#">留言管理</a></li>
-            <li><a href="#">评论管理</a></li>
+            <li><a href="<?php echo url('admin/Interaction/applicants'); ?>">报名列表</a></li>
+            <li><a href="<?php echo url('admin/Interaction/messageboard'); ?>">留言管理</a></li>
+            <li><a href="<?php echo url('admin/Interaction/comments'); ?>">评论管理</a></li>
           </ul>
         </li>
       </ul>

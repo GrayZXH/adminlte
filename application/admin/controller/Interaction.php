@@ -2,21 +2,19 @@
 namespace app\admin\controller;
 
 use think\Controller;
-use think\facade\Request;
 
-class Posts extends Controller
+class  Interaction extends Controller
 {
-    public function add()
+    public function applicants()
     {
         return $this->fetch();
     }
-    public function posts()
+    public function comments()
     {
         return $this->fetch();
     }
-    public function draft()
+    public function messageboard()
     {
         return $this->fetch();
     }
-    
 }

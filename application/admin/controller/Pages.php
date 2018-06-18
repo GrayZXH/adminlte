@@ -15,8 +15,8 @@ class Pages extends Controller
         return $this->fetch();
     }
 
-    public function p()
+    public function draft()
     {
-        return 'helloo';
+        return $this->fetch();
     }
 }

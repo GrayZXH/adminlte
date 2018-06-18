@@ -1,3 +1,4 @@
+<?php /*a:1:{s:55:"E:\www\adminlte\application\admin\view\login\index.html";i:1529305616;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:55:"E:\www\adminlte\application\admin\view\pages\pages.html";i:1528870769;s:48:"E:\www\adminlte\application\admin\view\base.html";i:1528600291;}*/ ?>
+<?php /*a:2:{s:55:"E:\www\adminlte\application\admin\view\pages\pages.html";i:1528959836;s:48:"E:\www\adminlte\application\admin\view\base.html";i:1528962527;}*/ ?>
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -256,8 +256,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <ul class="treeview-menu">
             <li><a href="<?php echo url('admin/Posts/add'); ?>">添加文章</a></li>
             <li><a href="<?php echo url('admin/Posts/posts'); ?>">文章列表</a></li>
-            <li><a href="#">草稿箱</a></li>
-            <li><a href="#">回收站</a></li>
+            <li><a href="<?php echo url('admin/Posts/draft'); ?>">草稿箱</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -269,8 +268,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <ul class="treeview-menu">
             <li><a href="<?php echo url('admin/Pages/add'); ?>">添加页面</a></li>
             <li><a href="<?php echo url('admin/Pages/pages'); ?>">页面列表</a></li>
-            <li><a href="#">草稿箱</a></li>
-            <li><a href="#">回收站</a></li>
+            <li><a href="<?php echo url('admin/Pages/draft'); ?>">草稿箱</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -290,9 +288,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">报名列表</a></li>
-            <li><a href="#">留言管理</a></li>
-            <li><a href="#">评论管理</a></li>
+            <li><a href="<?php echo url('admin/Interaction/applicants'); ?>">报名列表</a></li>
+            <li><a href="<?php echo url('admin/Interaction/messageboard'); ?>">留言管理</a></li>
+            <li><a href="<?php echo url('admin/Interaction/comments'); ?>">评论管理</a></li>
           </ul>
         </li>
       </ul>
@@ -305,7 +303,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     
-	<section class="content-header">
+  <section class="content-header">
       <h1>
         页面管理
         <small>页面列表</small>
@@ -327,19 +325,57 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <div style="background-color: #fff">
   <div class="row">
     <div class="col-xs-12">
-      <div class="box">
-        <div class="box-header">
-          <h3 class="box-title">所有页面</h3>
-          <div class="box-tools">
-            <div class="input-group input-group-sm" style="width: 150px;">
-              <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+      <div class="box box-default">
+        <div class="box-header with-border">
+          <h3 class="box-title">条件筛选</h3>
 
-              <div class="input-group-btn">
-                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body" style="">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+              <div class="form-group">
+                <label>关键字搜索</label>
+                <input type="text" class="form-control" placeholder="搜索...">
               </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <div class="form-group">
+                  <label>分类</label>
+                  <select class="form-control">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <div class="form-group">
+                  <label>创建人</label>
+                  <select class="form-control">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group">
+              <label class="hidden-xs"><a style="visibility: hidden;">搜索</a></label>
+              <div style="margin-left: 15px;"><button type="button" class="btn btn-default"><i class="fa fa-search"></i></button></div>
             </div>
           </div>
         </div>
+        <!-- /.box-body -->
+      </div>
+      <div class="box box-success">
         <!-- /.box-header -->
         <div class="box-body table-responsive no-padding">
           <table class="table table-hover">
@@ -417,29 +453,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
   
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  

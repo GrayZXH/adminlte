@@ -1,3 +1,4 @@
+<?php /*a:2:{s:55:"E:\www\adminlte\application\admin\view\posts\draft.html";i:1528960411;s:48:"E:\www\adminlte\application\admin\view\base.html";i:1528960164;}*/ ?>
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -7,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-  {block name="title"}<title>网站标题</title>{/block}
+  <title>文章列表</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
@@ -22,8 +23,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
   <link rel="stylesheet" type="text/css"  href="/static/admin/dist/css/skins/skin-red.min.css " />
-  {block name="jsone"}{/block}
-  {block name="css"}{/block}
+  
+  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +44,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="{:url('admin/Index/index')}" class="logo">
+    <a href="<?php echo url('admin/Index/index'); ?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>UIN</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -242,10 +243,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Sidebar Menu</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="{:url('admin/Index/index')}"><i class="fa fa-dashboard"></i> <span>控制台</span></a></li>
+        <li class="active"><a href="<?php echo url('admin/Index/index'); ?>"><i class="fa fa-dashboard"></i> <span>控制台</span></a></li>
         <li><a href="#"><i class="fa fa-server"></i> <span>站点管理</span></a></li>
         <li><a href="#"><i class="fa fa-home"></i> <span>首页管理</span></a></li>
-        <li><a href="{:url('admin/User/users')}"><i class="fa fa-user-circle-o"></i> <span>用户管理</span></a></li>
+        <li><a href="<?php echo url('admin/User/users'); ?>"><i class="fa fa-user-circle-o"></i> <span>用户管理</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-file-word-o"></i> <span>文章管理</span>
             <span class="pull-right-container">
@@ -253,9 +254,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{:url('admin/Posts/add')}">添加文章</a></li>
-            <li><a href="{:url('admin/Posts/posts')}">文章列表</a></li>
-            <li><a href="{:url('admin/Posts/draft')}">草稿箱</a></li>
+            <li><a href="<?php echo url('admin/Posts/add'); ?>">添加文章</a></li>
+            <li><a href="<?php echo url('admin/Posts/posts'); ?>">文章列表</a></li>
+            <li><a href="<?php echo url('admin/Posts/draft'); ?>">草稿箱</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -265,9 +266,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{:url('admin/Pages/add')}">添加页面</a></li>
-            <li><a href="{:url('admin/Pages/pages')}">页面列表</a></li>
-            <li><a href="{:url('admin/Pages/draft')}">草稿箱</a></li>
+            <li><a href="<?php echo url('admin/Pages/add'); ?>">添加页面</a></li>
+            <li><a href="<?php echo url('admin/Pages/pages'); ?>">页面列表</a></li>
+            <li><a href="<?php echo url('admin/Pages/draft'); ?>">草稿箱</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -287,9 +288,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{:url('admin/Interaction/applicants')}">报名列表</a></li>
-            <li><a href="{:url('admin/Interaction/messageboard')}">留言管理</a></li>
-            <li><a href="{:url('admin/Interaction/comments')}">评论管理</a></li>
+            <li><a href="#">报名列表</a></li>
+            <li><a href="#">留言管理</a></li>
+            <li><a href="#">评论管理</a></li>
           </ul>
         </li>
       </ul>
@@ -301,18 +302,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    {block name="pageheader"} 
-    <section class="content-header">
+    
+	<section class="content-header">
       <h1>
-        Page Header
-        <small>Optional description</small>
+        文章草稿箱
+        <small>草稿列表</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> 文章草稿箱</a></li>
+        <li class="active">草稿列表</li>
       </ol>
     </section>
-    {/block}
+
 
     <!-- Main content -->
     <section class="content container-fluid">
@@ -320,7 +321,140 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
-      {block name="content"} <p>content</p> {/block}
+      
+<div style="background-color: #fff">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box box-default">
+        <div class="box-header with-border">
+          <h3 class="box-title">条件筛选</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body" style="">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+              <div class="form-group">
+                <label>关键字搜索</label>
+                <input type="text" class="form-control" placeholder="搜索...">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <div class="form-group">
+                  <label>分类</label>
+                  <select class="form-control">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <div class="form-group">
+                  <label>创建人</label>
+                  <select class="form-control">
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group">
+              <label class="hidden-xs"><a style="visibility: hidden;">搜索</a></label>
+              <div style="margin-left: 15px;"><button type="button" class="btn btn-default"><i class="fa fa-search"></i></button></div>
+            </div>
+          </div>
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <div class="box box-success">
+        <!-- /.box-header -->
+        <div class="box-body table-responsive no-padding">
+          <table class="table table-hover">
+            <tbody><tr>
+              <th>ID</th>
+              <th>文章标题</th>
+              <th>发布时间</th>
+              <th>分类</th>
+              <th>描述</th>
+              <th>操作</th>
+            </tr>
+            <tr>
+              <td>183</td>
+              <td>John Doe</td>
+              <td>11-7-2014</td>
+              <td><span class="label label-success">分类一</span></td>
+              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+              <td>
+                <div class="btn-group  btn-group-xs" role="group">
+                  <button type="button" class="btn btn-success">编辑</button>
+                  <button type="button" class="btn btn-danger">删除</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>219</td>
+              <td>Alexander Pierce</td>
+              <td>11-7-2014</td>
+              <td><span class="label label-warning">分类二</span></td>
+              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+              <td>
+                <div class="btn-group  btn-group-xs" role="group">
+                  <button type="button" class="btn btn-success">编辑</button>
+                  <button type="button" class="btn btn-danger">删除</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>657</td>
+              <td>Bob Doe</td>
+              <td>11-7-2014</td>
+              <td><span class="label label-primary">分类三</span></td>
+              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+              <td>
+                <div class="btn-group  btn-group-xs" role="group">
+                  <button type="button" class="btn btn-success">编辑</button>
+                  <button type="button" class="btn btn-danger">删除</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>175</td>
+              <td>Mike Doe</td>
+              <td>11-7-2014</td>
+              <td><span class="label label-danger">分类四</span></td>
+              <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+              <td>
+                <div class="btn-group  btn-group-xs" role="group">
+                  <button type="button" class="btn btn-success">编辑</button>
+                  <button type="button" class="btn btn-danger">删除</button>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+        <!-- /.box-body -->
+      </div>
+      <!-- /.box -->
+    </div>
+  </div>
+  
+
+</div>
+
+
+
+
+
+ 
 
     </section>
     <!-- /.content -->
@@ -422,7 +556,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="/static/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/static/admin/dist/js/adminlte.min.js"></script>
-{block name="jstwo"}{/block}
+
 
 
 
