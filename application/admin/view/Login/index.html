@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/static/admin/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="/static/admin/dist/css/AdminLTE.min.css">
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,19 +29,19 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="/static/admin/index2.html"><b>IDataMind</b></a>
+    <a href="#"><b>IDataMind</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">账号登录</p>
 
-    <form action="/static/admin/index2.html" method="post">
+    <form>
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" class="form-control" id="email" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" id="password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -49,7 +50,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
+          <button class="btn btn-primary btn-block btn-flat" onclick="login.check()">登录</button>
         </div>
         <!-- /.col -->
       </div>
@@ -71,6 +72,9 @@
   <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
-
+<script>
+  var url = 'check';
+</script>
+<script src="/static/admin/JS/login.js"></script>
 </body>
 </html>
